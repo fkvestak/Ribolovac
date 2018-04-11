@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "397076887685",
+    "firebase_url": "https://ribolovac-1c681.firebaseio.com",
+    "project_id": "ribolovac-1c681",
+    "storage_bucket": "ribolovac-1c681.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397076887685:android:82f555baade3196e",
+        "android_client_info": {
+          "package_name": "hr.kvec.ribolovac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397076887685-fkhi46ifqrc68lp88ikhott9r5vrpf6a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hr.kvec.ribolovac",
+            "certificate_hash": "72d52b9e914af065efc3d813e11028c346b1e0b4"
+          }
+        },
+        {
+          "client_id": "397076887685-06tglah6gn05a0ng09ene2vugca6knqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHjNTOaOwSOnve2dJwHNT8Yjkk0UViLdg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397076887685-06tglah6gn05a0ng09ene2vugca6knqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
