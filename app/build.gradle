@@ -23,11 +23,44 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    // ANKO
+    implementation "org.jetbrains.anko:anko-commons:$anko_version"
+    implementation "org.jetbrains.anko:anko-design:$anko_version"
+    implementation "org.jetbrains.anko:anko-sdk25:$anko_version"
+
+    //SUPPORT
+    implementation "com.android.support:support-v4:$app_compat_version"
+    implementation "com.android.support:appcompat-v7:$app_compat_version"
+    implementation "com.android.support:design:$app_compat_version"
+    implementation "com.android.support:cardview-v7:$app_compat_version"
+    implementation "com.android.support:recyclerview-v7:$app_compat_version"
+
+    //GOOGLE PLAY SERVICES
+    implementation "com.google.android.gms:play-services-auth:$google_play_services"
+
+    //FIREBASE
+    implementation "com.google.firebase:firebase-core:$google_play_services"
+    implementation "com.google.firebase:firebase-crash:$google_play_services"
+    implementation "com.google.firebase:firebase-messaging:$google_play_services"
+    implementation "com.google.firebase:firebase-config:$google_play_services"
+    implementation "com.google.firebase:firebase-database:$google_play_services"
+    implementation "com.google.firebase:firebase-auth:$google_play_services"
+    implementation "com.google.firebase:firebase-storage:$google_play_services"
+    implementation "com.google.firebase:firebase-perf:$google_play_services"
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.1'
+
+    //FIREBASE UI
+    implementation "com.firebaseui:firebase-ui-auth:$firebase_ui_version"
+    implementation "com.firebaseui:firebase-ui-database:$firebase_ui_version"
+
+    //TRANSITIVE LIBS
+    implementation "com.android.support:preference-v7:$app_compat_version"
+    implementation 'com.jenzz.appstate:appstate:3.0.1'
+    implementation "com.android.support:preference-v14:$app_compat_version"
+    implementation 'com.takisoft.fix:preference-v7:25.3.0.0'
 }
+apply plugin: 'com.google.gms.google-services'
